@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capacity Planning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Capacity Planning for Predictive Maintenance</h1>
+        <form id="capacityForm">
+            <label for="cpuUsage">CPU Usage (%):</label>
+            <input type="number" id="cpuUsage" name="cpuUsage" required>
+
+            <label for="memoryUsage">Memory Usage (%):</label>
+            <input type="number" id="memoryUsage" name="memoryUsage" required>
+
+            <label for="diskUsage">Disk Usage (%):</label>
+            <input type="number" id="diskUsage" name="diskUsage" required>
+
+            <label for="networkUsage">Network Usage (%):</label>
+            <input type="number" id="networkUsage" name="networkUsage" required>
+
+            <button type="submit">Predict Capacity Requirement</button>
+        </form>
+
+        <h2>Predicted Capacity Requirement:</h2>
+        <p id="predictionResult"></p>
+        <h2>Predicted Capacity Requirement:</h2>
+<p id="predictionResult"></p>
+
+<!-- Add a canvas for the graph -->
+<canvas id="capacityChart" width="400" height="200"></canvas>
+
+        <button id="viewPredictions">View All Predictions</button>
+        <div id="predictionsList"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
