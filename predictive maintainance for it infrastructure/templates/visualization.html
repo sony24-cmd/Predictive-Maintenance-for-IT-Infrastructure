@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Visualization</h2>
+
+<canvas id="cpuChart"></canvas>
+<canvas id="memChart"></canvas>
+<canvas id="diskChart"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/static/js/visualization.js"></script>
+{% endblock %}

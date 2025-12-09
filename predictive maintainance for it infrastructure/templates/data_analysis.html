@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Data Analysis</h2>
+
+<button id="loadData">Load Data</button>
+<div id="statsBox"></div>
+
+<table id="dataTable" border="1">
+    <thead>
+        <tr>
+            <th>Time</th><th>CPU</th><th>Memory</th><th>Disk</th>
+            <th>Temp</th><th>Network</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script src="/static/js/data_analysis.js"></script>
+{% endblock %}

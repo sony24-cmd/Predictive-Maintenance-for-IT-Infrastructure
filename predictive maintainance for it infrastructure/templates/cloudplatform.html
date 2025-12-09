@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Cloud Platform Monitoring</h2>
+
+<div id="cloudInstances"></div>
+<div id="cloudStorage"></div>
+<canvas id="cloudNet" width="400"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/static/js/cloud.js"></script>
+{% endblock %}

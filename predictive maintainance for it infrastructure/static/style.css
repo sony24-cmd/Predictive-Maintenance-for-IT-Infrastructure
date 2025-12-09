@@ -1,0 +1,29 @@
+body {
+    background: #111;
+    color: white;
+    font-family: Arial;
+}
+
+nav {
+    background: #222;
+    padding: 10px;
+}
+
+nav a {
+    color: cyan;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.content {
+    margin: 20px;
+}
+
+button {
+    padding: 10px;
+    background: cyan;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
